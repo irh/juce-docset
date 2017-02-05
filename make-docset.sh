@@ -8,6 +8,7 @@ sed -i.bak \
   -e 's/.*DISABLE_INDEX.*= NO.*/DISABLE_INDEX = YES/' \
   -e 's/.*SEARCHENGINE.*= YES.*/SEARCHENGINE = NO/' \
   -e 's/.*GENERATE_TREEVIEW.*= YES.*/GENERATE_TREEVIEW = NO/' \
+  -e 's/.*HTML_HEADER.*=.*/HTML_HEADER = ..\/..\/header.html/' \
   Doxyfile
 doxygen
 cd doc
